@@ -1,0 +1,13 @@
+.chores {
+    font-family: fantasy;
+    font-size: 23px;
+    background-color: lightgreen;
+    color: blue;
+}
+h3 {
+    text-decoration: underline;
+    text-underline-position: auto;
+}
+ul {
+    font-style: italic;
+}
