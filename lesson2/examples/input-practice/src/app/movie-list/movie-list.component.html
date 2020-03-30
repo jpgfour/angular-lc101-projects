@@ -4,5 +4,9 @@
        <li *ngFor ="let movie of movies">{{movie}}</li>
     </ol>
     <hr>
-
- </div>
+    <input #newMovie (keyup.enter)='addMovie(newMovie.value); newMovie.value = ""' type='text' placeholder="Enter Movie Title Here"/>
+    <button (click)='addMovie(newMovie.value); newMovie.value = ""'>Add</button>
+    <!--<h3 *ngIf ="(movies.includes(newMovie.value) || newMovie.value === '')" style="color: red"> 
+      Don't Do That-->
+    </h3>
+   </div>
